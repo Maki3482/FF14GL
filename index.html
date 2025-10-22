@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FF14 战术联动面板</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="brand">
+        <span class="brand__logo">FF14</span>
+        <span class="brand__title">黄金攻略联动中心</span>
+      </div>
+      <button class="nav-toggle" aria-label="展开导航" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="#home">首页</a></li>
+          <li><a href="#features">功能亮点</a></li>
+          <li><a href="#timeline">作战日程</a></li>
+          <li><a href="#tools">战术工具</a></li>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#join" class="nav-cta">立即加入</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero__content">
+          <h1>组织你的团队，攻克下一轮终局挑战</h1>
+          <p>
+            黄金攻略联动中心整合了赛季安排、分工分配、实时战报以及知识库，让每一位团员都能迅速掌握战场节奏，形成真正的协作闭环。
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#join">立即开团</a>
+            <a class="btn btn--ghost" href="#features">查看系统功能</a>
+          </div>
+          <dl class="hero__stats">
+            <div>
+              <dt>活跃战团</dt>
+              <dd>128</dd>
+            </div>
+            <div>
+              <dt>平均通关时间</dt>
+              <dd>32<span>分钟</span></dd>
+            </div>
+            <div>
+              <dt>策略模板</dt>
+              <dd>64+</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="hero__panel">
+          <div class="panel-card panel-card--primary">
+            <h2>本周关键任务</h2>
+            <ul>
+              <li>【周二】限制级零式联动解析</li>
+              <li>【周四】全服跨区练习赛模拟</li>
+              <li>【周末】终极绝境轮换演练</li>
+            </ul>
+          </div>
+          <div class="panel-card panel-card--secondary">
+            <h3>团队状态</h3>
+            <div class="panel-card__progress">
+              <span>战斗熟练度</span>
+              <div class="progress-bar" data-value="82"></div>
+            </div>
+            <div class="panel-card__progress">
+              <span>指令响应率</span>
+              <div class="progress-bar" data-value="94"></div>
+            </div>
+            <div class="panel-card__progress">
+              <span>补给准备</span>
+              <div class="progress-bar" data-value="68"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="highlights" id="features">
+        <h2>核心功能亮点</h2>
+        <p class="section-intro">
+          从排期、策略，到战斗复盘，我们将碎片化的沟通整合为一个可视化指挥系统。
+        </p>
+        <div class="highlight-grid">
+          <article class="highlight-item">
+            <h3>战术仪表盘</h3>
+            <p>
+              自定义卡片展示血线阈值、机制倒计时与职责提醒，实时同步每位成员的状态反馈。
+            </p>
+            <span class="tag">实时同步</span>
+          </article>
+          <article class="highlight-item">
+            <h3>多维排班</h3>
+            <p>
+              支持跨服务器时区的排班协作，自动规避时间冲突，并生成事件提醒。
+            </p>
+            <span class="tag">智能排程</span>
+          </article>
+          <article class="highlight-item">
+            <h3>战报数据库</h3>
+            <p>
+              自动归档的战斗录像与操作日志搭配复盘模板，帮助指挥快速定位问题。
+            </p>
+            <span class="tag">一键复盘</span>
+          </article>
+          <article class="highlight-item">
+            <h3>协作工具箱</h3>
+            <p>
+              任务分配、装备检查与物资申领等流程全部流程化，可视化掌握执行进度。
+            </p>
+            <span class="tag">流程闭环</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="timeline" id="timeline">
+        <div class="timeline__header">
+          <h2>赛季作战日程</h2>
+          <p>
+            一览式视角掌控每周策略重点，并在关键节点自动提醒团员完成准备事项。
+          </p>
+        </div>
+        <ol class="timeline__list">
+          <li class="timeline__item">
+            <span class="timeline__date">周一</span>
+            <div class="timeline__card">
+              <h3>战术会议与分工</h3>
+              <p>导入上周战报，更新最新机制要点，分配本周职责与轮换顺序。</p>
+              <div class="timeline__meta">在线会议 · 指挥、分队长</div>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__date">周三</span>
+            <div class="timeline__card">
+              <h3>进度冲刺与演练</h3>
+              <p>根据进度条落点安排演练策略，系统会在开场前 30 分钟推送提醒。</p>
+              <div class="timeline__meta">P4 机制 · 全团参与</div>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__date">周五</span>
+            <div class="timeline__card">
+              <h3>装备与补给检查</h3>
+              <p>库存预警、药水分发与装备耐久检测，完成后自动记录为绿色。</p>
+              <div class="timeline__meta">后勤系统 · 仓库管理员</div>
+            </div>
+          </li>
+          <li class="timeline__item timeline__item--active">
+            <span class="timeline__date">周日</span>
+            <div class="timeline__card">
+              <h3>最终攻坚战</h3>
+              <p>实时语音指令联动，战斗日志秒级落地，战后自动触发复盘流程。</p>
+              <div class="timeline__meta">终局副本 · 核心成员</div>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="rewards" id="rewards">
+        <h2>绩效与奖励体系</h2>
+        <p class="section-intro">
+          透明的绩效指标帮助团队稳定推进，同时激励更多团员参与高难度攻略。
+        </p>
+        <div class="reward-grid">
+          <div class="reward-card">
+            <h3>进度里程碑</h3>
+            <p>通关节点自动触发奖励发放，系统同步到 FC 仓库与个人日志。</p>
+            <ul>
+              <li>战利品自动登记</li>
+              <li>成员贡献信息可追溯</li>
+              <li>支持自定义奖励规则</li>
+            </ul>
+          </div>
+          <div class="reward-card">
+            <h3>个人成长曲线</h3>
+            <p>面向各职业的个人表现图表，帮助成员识别提升空间与技能短板。</p>
+            <ul>
+              <li>指标对比同职业平均</li>
+              <li>提供训练建议与素材</li>
+              <li>每周总结自动生成</li>
+            </ul>
+          </div>
+          <div class="reward-card">
+            <h3>团队荣誉墙</h3>
+            <p>将首杀截图、开荒剪辑与荣誉称号集中展示，让团员的努力被看见。</p>
+            <ul>
+              <li>支持上传自定义素材</li>
+              <li>可嵌入社交平台分享</li>
+              <li>成员标签一目了然</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="tools" id="tools">
+        <div class="tools__header">
+          <h2>战术工具箱</h2>
+          <p>
+            一套轻量但实用的在线工具，帮助指挥在团战前后迅速掌握信息与节奏。
+          </p>
+        </div>
+        <div class="tools__content">
+          <div class="tools__board">
+            <h3>本周战斗指令状态</h3>
+            <div class="board-row">
+              <span>预演流程脚本</span>
+              <div class="status-chip status-chip--ready">已准备</div>
+            </div>
+            <div class="board-row">
+              <span>补位替换方案</span>
+              <div class="status-chip status-chip--pending">待确认</div>
+            </div>
+            <div class="board-row">
+              <span>技能冷却对照</span>
+              <div class="status-chip status-chip--alert">需更新</div>
+            </div>
+            <div class="board-row">
+              <span>语音频道录制</span>
+              <div class="status-chip status-chip--ready">已准备</div>
+            </div>
+          </div>
+          <div class="tools__chart">
+            <h3>伤害与机制执行概览</h3>
+            <div class="chart">
+              <div class="chart__item" data-label="DPS" data-value="88"></div>
+              <div class="chart__item" data-label="HPS" data-value="74"></div>
+              <div class="chart__item" data-label="机制完成率" data-value="92"></div>
+              <div class="chart__item" data-label="失误率" data-value="12"></div>
+            </div>
+            <small>数值来源于最新一轮进度统计，实时同步。</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <h2>常见问题</h2>
+        <div class="faq__list">
+          <article class="faq__item">
+            <header>
+              <h3>如何让新成员快速熟悉团队流程？</h3>
+              <button aria-label="展开回答" class="faq__toggle">展开</button>
+            </header>
+            <p>
+              系统提供新手引导场景：阅读任务、观看录像与练习安排全部集中在“首日清单”中，同时会在 48 小时内提醒分队长进行一对一跟进。
+            </p>
+          </article>
+          <article class="faq__item">
+            <header>
+              <h3>是否支持与现有的语音或排副插件对接？</h3>
+              <button aria-label="展开回答" class="faq__toggle">展开</button>
+            </header>
+            <p>
+              我们开放 Webhook 与数据导入接口，可将 ACT、FFLogs 以及常用语音机器人数据直接映射到仪表盘。
+            </p>
+          </article>
+          <article class="faq__item">
+            <header>
+              <h3>系统如何保障跨服务器团队的协作体验？</h3>
+              <button aria-label="展开回答" class="faq__toggle">展开</button>
+            </header>
+            <p>
+              内建时区转换、跨服 ID 映射与自动语音录制归档，确保成员不受服务器限制也能同步信息。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta" id="join">
+        <div class="cta__content">
+          <h2>即刻接入黄金攻略联动中心</h2>
+          <p>
+            无论你是 FC 指挥还是固定团团长，10 分钟即可完成基础配置，把时间留给真正重要的战斗演练。
+          </p>
+        </div>
+        <form class="cta__form">
+          <label>
+            联系方式
+            <input type="email" placeholder="name@example.com" required />
+          </label>
+          <label>
+            团队规模
+            <select required>
+              <option value="" disabled selected>请选择</option>
+              <option>8 人小队</option>
+              <option>16 人拓展团</option>
+              <option>24 人大型活动</option>
+            </select>
+          </label>
+          <label>
+            近期目标
+            <textarea rows="3" placeholder="例如：三周内完成绝境战通关"></textarea>
+          </label>
+          <button type="submit" class="btn btn--primary">预约演示</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer__brand">
+        <span class="brand__logo">FF14</span>
+        <span class="brand__title">黄金攻略联动中心</span>
+        <p>协同、复盘、成长 —— 打造属于你的终局攻略战术体系。</p>
+      </div>
+      <div class="footer__links">
+        <a href="#features">功能亮点</a>
+        <a href="#timeline">作战日程</a>
+        <a href="#tools">工具箱</a>
+        <a href="#faq">常见问题</a>
+      </div>
+      <div class="footer__meta">
+        <span>© 2024 Golden Link Tactical Center</span>
+        <a href="#top">返回顶部</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
